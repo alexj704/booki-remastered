@@ -115,3 +115,23 @@
 .accomodationsList {
   padding: 0;
 }
+
+.moreText {
+  float: right;
+  padding: 0 30px 20px 0;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .accomodationsContainer {
+    width: 66%;
+  }
+
+  .accomodationsList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

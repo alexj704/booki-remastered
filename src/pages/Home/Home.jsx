@@ -100,6 +100,9 @@ function Home() {
             )
           )}
         </ul>
+        <a href="#" className={styles.moreText}>
+          Afficher plus
+        </a>
       </section>
     </main>
   );
