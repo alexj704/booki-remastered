@@ -8,6 +8,7 @@ import {
   faChild,
   faHeart,
   faDog,
+  faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "../../components/Cards/Cards";
 
@@ -24,6 +25,10 @@ function Home() {
         setError(true);
       });
   }, []);
+
+  const bestAccomodation = [...data].sort((a, b) =>
+    a.rating < b.rating ? 1 : -1
+  );
 
   return (
     <main className={styles.mainContainer}>
@@ -78,32 +83,56 @@ function Home() {
           <p>Animaux autorisés</p>
         </div>
       </div>
-      <section className={styles.accomodationsContainer}>
-        <h2 className={styles.accomodationsTitle}>
-          Hébergements sur Marseille
-        </h2>
-        <ul className={styles.accomodationsList}>
-          {error ? (
-            <span className={styles.errorText}>Oups il y a une erreur</span>
-          ) : (
-            data.map(
+      <div className={styles.topContainer}>
+        <section className={styles.accomodationsContainer}>
+          <h2 className={styles.accomodationsTitle}>
+            Hébergements sur Marseille
+          </h2>
+          <ul className={styles.accomodationsList}>
+            {error ? (
+              <span className={styles.errorText}>Oups il y a une erreur</span>
+            ) : (
+              data.map(
+                (profile, index) =>
+                  index < 6 && (
+                    <Card
+                      key={`${profile.id}-${index}`}
+                      title={profile.title}
+                      cover={profile.cover}
+                      price={profile.price}
+                      rating={profile.rating}
+                    />
+                  )
+              )
+            )}
+          </ul>
+          <a href="#" className={styles.moreText}>
+            Afficher plus
+          </a>
+        </section>
+        <aside className={styles.mostPopularContainer}>
+          <div className={styles.mostPopularHead}>
+            <h2 className={styles.mostPopularTitle}>Les plus populaires</h2>
+            <i className={styles.mostPopularIcon}>
+              <FontAwesomeIcon icon={faChartLine} />
+            </i>
+          </div>
+          <ul className={styles.mostPopularList}>
+            {bestAccomodation.map(
               (profile, index) =>
-                index < 6 && (
+                index < 3 && (
                   <Card
-                    key={profile.id}
+                    key={`${profile.id}-${index}`}
                     title={profile.title}
                     cover={profile.cover}
                     price={profile.price}
                     rating={profile.rating}
                   />
                 )
-            )
-          )}
-        </ul>
-        <a href="#" className={styles.moreText}>
-          Afficher plus
-        </a>
-      </section>
+            )}
+          </ul>
+        </aside>
+      </div>
     </main>
   );
 }

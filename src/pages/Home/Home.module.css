@@ -99,6 +99,11 @@
   margin-left: -4px;
 }
 
+.topContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .accomodationsContainer {
   width: 100%;
   background-color: var(--background-color);
@@ -109,11 +114,16 @@
 
 .accomodationsTitle {
   margin: 20px;
-  padding-top: 20px;
 }
 
 .accomodationsList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 0;
+  margin: 0 10px;
 }
 
 .moreText {
@@ -125,13 +135,47 @@
   color: inherit;
 }
 
+.mostPopularHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mostPopularContainer {
+  background-color: var(--background-color);
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.mostPopularList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
+  .topContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .accomodationsContainer {
     width: 66%;
+    height: auto;
   }
 
   .accomodationsList {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+  }
+
+  .mostPopularContainer {
+    width: 33%;
+    height: 100%;
+    margin-bottom: 30px;
   }
 }

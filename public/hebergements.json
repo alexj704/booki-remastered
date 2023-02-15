@@ -55,7 +55,7 @@
     "cover": "../src/assets/covers/chez-amina-cover.jpg",
     "location": "Marseille",
     "price": "96",
-    "rating": "5",
+    "rating": "3",
     "tags": ["IVeme", "Hôtel", "Marseille"],
     "animals": true
   },
@@ -65,7 +65,7 @@
     "cover": "../src/assets/covers/soleil-matin-cover.jpg",
     "location": "Marseille",
     "price": "128",
-    "rating": "5",
+    "rating": "3",
     "tags": ["IIe", "Hôtel", "Marseille"],
     "animals": true
   },
@@ -85,7 +85,7 @@
     "cover": "../src/assets/covers/bleu-blanc-cover.jpg",
     "location": "Marseille",
     "price": "68",
-    "rating": "4",
+    "rating": "5",
     "tags": ["IIIe", "Hôtel", "Marseille"],
     "animals": true
   }
