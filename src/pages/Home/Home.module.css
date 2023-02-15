@@ -1,0 +1,117 @@
+.homeHeader {
+  margin-top: 20px;
+}
+
+.homeHeaderTitle {
+  font-size: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.iconMapMarker {
+  display: flex;
+  font-size: 120%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--background-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.city {
+  height: 50px;
+  border: solid 1px var(--background-color);
+  font-weight: 800;
+  padding-left: 15px;
+}
+
+.searchButton {
+  display: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  padding: 0 15px;
+}
+
+.iconGlass {
+  display: flex;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-right: 30px;
+  border: solid 2px var(--background-color);
+  border-radius: 30px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.filters:hover {
+  scale: 1.1;
+  background-color: var(--primary-color);
+}
+
+.filterTitle {
+  margin-right: 25px;
+}
+
+.filters p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.filtersIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin-left: -4px;
+}
+
+.accomodationsContainer {
+  width: 100%;
+  background-color: var(--background-color);
+  border-radius: 25px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.accomodationsTitle {
+  margin: 20px;
+  padding-top: 20px;
+}
+
+.accomodationsList {
+  padding: 0;
+}

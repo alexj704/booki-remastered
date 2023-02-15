@@ -1,0 +1,37 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+}
+
+.footerLinks {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerList:first-child {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .footerList:first-child {
+    margin-left: 20px;
+  }
+
+  .footerList:last-child {
+    margin-right: 20px;
+  }
+}
