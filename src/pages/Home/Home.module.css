@@ -156,6 +156,45 @@
   padding: 0;
 }
 
+.activitiesContainer {
+  background-color: var(--background-color);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.activitiesTitle {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.activities {
+  height: 250px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 20px 10px;
+}
+
+.activitiesImage {
+  width: 100%;
+  height: 85%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.activitiesName {
+  height: 15%;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .topContainer {
     flex-direction: row;
@@ -175,7 +214,22 @@
 
   .mostPopularContainer {
     width: 33%;
-    height: 100%;
+    height: auto;
     margin-bottom: 30px;
+  }
+
+  .activitiesList {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .activitiesTitle {
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .activities {
+    height: 450px;
+    width: 25%;
   }
 }

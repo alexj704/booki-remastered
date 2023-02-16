@@ -12,6 +12,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "../../components/Cards/Cards";
 
+import vieuxPort from "../../assets/activities/vieux-port.jpg";
+import dameGarde from "../../assets/activities/notre-dame-garde.jpg";
+import parcCalanques from "../../assets/activities/parc-calanques.jpg";
+import fortPomegues from "../../assets/activities/fort-pomegues.jpg";
+
 function Home() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
@@ -133,6 +138,45 @@ function Home() {
           </ul>
         </aside>
       </div>
+      <section className={styles.activitiesContainer}>
+        <h2 className={styles.activitiesTitle}>Activités à Marseille</h2>
+        <div className={styles.activitiesList}>
+          <div className={styles.activities}>
+            <img
+              src={vieuxPort}
+              className={styles.activitiesImage}
+              alt="Vieux port"
+            />
+            <h3 className={styles.activitiesName}>Vieux Port</h3>
+          </div>
+          <div className={styles.activities}>
+            <img
+              src={fortPomegues}
+              className={styles.activitiesImage}
+              alt="Fort de Pomègues"
+            />
+            <h3 className={styles.activitiesName}>Fort de Pomègues</h3>
+          </div>
+          <div className={styles.activities}>
+            <img
+              src={parcCalanques}
+              className={styles.activitiesImage}
+              alt="Parc National des Calanques"
+            />
+            <h3 className={styles.activitiesName}>
+              Parc National des Calanques
+            </h3>
+          </div>
+          <div className={styles.activities}>
+            <img
+              src={dameGarde}
+              className={styles.activitiesImage}
+              alt="Notre-Dame-de-la-Garde"
+            />
+            <h3 className={styles.activitiesName}>Notre-Dame-de-la-Garde</h3>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
