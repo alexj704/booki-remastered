@@ -1,14 +1,17 @@
 import Booki from "../../assets/Booki.png";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className={styles.headerContainer}>
-      <img src={Booki} alt="logo booki" className={styles.headerLogo} />
+      <Link to="/">
+        <img src={Booki} alt="logo booki" className={styles.headerLogo} />
+      </Link>
       <nav className={styles.headerNav}>
-        <a href="#" className={styles.headerLinks}>
-          Hébergements
-        </a>
+        <Link to="/" className={styles.headerLinks}>
+          Accueil
+        </Link>
         <a href="#" className={styles.headerLinks}>
           Activités
         </a>

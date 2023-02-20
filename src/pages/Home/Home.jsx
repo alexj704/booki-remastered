@@ -1,15 +1,8 @@
 import styles from "./Home.module.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMapMarkerAlt,
-  faMagnifyingGlass,
-  faMoneyBillWave,
-  faChild,
-  faHeart,
-  faDog,
-  faChartLine,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Card from "../../components/Cards/Cards";
 
 import vieuxPort from "../../assets/activities/vieux-port.jpg";
@@ -45,49 +38,6 @@ function Home() {
           En plein centre ville ou en pleine nature
         </p>
       </div>
-      <div className={styles.searchContainer}>
-        <div className={styles.iconMapMarker}>
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
-        </div>
-        <form method="post" action="traitement.php">
-          <input
-            className={styles.city}
-            type="search"
-            placeholder="Marseille, France"
-          />
-        </form>
-        <button className={styles.searchButton}>Rechercher</button>
-        <div className={styles.iconGlass}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </div>
-      </div>
-      <div className={styles.filterContainer}>
-        <h2 className={styles.filterTitle}>Filtres: </h2>
-        <div className={styles.filters}>
-          <div className={styles.filtersIcon}>
-            <FontAwesomeIcon icon={faMoneyBillWave} />
-          </div>
-          <p>Economique</p>
-        </div>
-        <div className={styles.filters}>
-          <div className={styles.filtersIcon}>
-            <FontAwesomeIcon icon={faChild} />
-          </div>
-          <p>Familial</p>
-        </div>
-        <div className={styles.filters}>
-          <div className={styles.filtersIcon}>
-            <FontAwesomeIcon icon={faHeart} />
-          </div>
-          <p>Romantique</p>
-        </div>
-        <div className={styles.filters}>
-          <div className={styles.filtersIcon}>
-            <FontAwesomeIcon icon={faDog} />
-          </div>
-          <p>Animaux autorisés</p>
-        </div>
-      </div>
       <div className={styles.topContainer}>
         <section className={styles.accomodationsContainer}>
           <h2 className={styles.accomodationsTitle}>
@@ -111,9 +61,9 @@ function Home() {
               )
             )}
           </ul>
-          <a href="#" className={styles.moreText}>
+          <Link to="/hebergements/all" className={styles.moreText}>
             Afficher plus
-          </a>
+          </Link>
         </section>
         <aside className={styles.mostPopularContainer}>
           <div className={styles.mostPopularHead}>

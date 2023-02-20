@@ -7,7 +7,8 @@
     "price": "25",
     "rating": "4",
     "tags": ["Canebière", "Auberge", "Marseille"],
-    "animals": true
+    "animals": true,
+    "maxPerson": "2"
   },
   {
     "id": "6658962",
@@ -17,7 +18,8 @@
     "price": "52",
     "rating": "4",
     "tags": ["Port", "Hôtel", "Marseille"],
-    "animals": false
+    "animals": false,
+    "maxPerson": "4"
   },
   {
     "id": "8524369",
@@ -27,7 +29,8 @@
     "price": "76",
     "rating": "5",
     "tags": ["IIIe", "Hôtel", "Marseille"],
-    "animals": false
+    "animals": false,
+    "maxPerson": "6"
   },
   {
     "id": "9862457",
@@ -37,7 +40,8 @@
     "price": "46",
     "rating": "4",
     "tags": ["IIIe", "Hôtel", "Marseille"],
-    "animals": true
+    "animals": true,
+    "maxPerson": "2"
   },
   {
     "id": "8254698",
@@ -47,7 +51,8 @@
     "price": "23",
     "rating": "3",
     "tags": ["Le Panier", "Auberge", "Marseille"],
-    "animals": false
+    "animals": false,
+    "maxPerson": "2"
   },
   {
     "id": "1425367",
@@ -57,7 +62,8 @@
     "price": "96",
     "rating": "3",
     "tags": ["IVeme", "Hôtel", "Marseille"],
-    "animals": true
+    "animals": true,
+    "maxPerson": "3"
   },
   {
     "id": "6598423",
@@ -67,7 +73,8 @@
     "price": "128",
     "rating": "3",
     "tags": ["IIe", "Hôtel", "Marseille"],
-    "animals": true
+    "animals": true,
+    "maxPerson": "3"
   },
   {
     "id": "3652874",
@@ -77,7 +84,8 @@
     "price": "71",
     "rating": "4",
     "tags": ["Ier", "Chambres d'hôtes", "Marseille"],
-    "animals": false
+    "animals": false,
+    "maxPerson": "4"
   },
   {
     "id": "9862457",
@@ -87,6 +95,7 @@
     "price": "68",
     "rating": "5",
     "tags": ["IIIe", "Hôtel", "Marseille"],
-    "animals": true
+    "animals": true,
+    "maxPerson": "4"
   }
 ]
