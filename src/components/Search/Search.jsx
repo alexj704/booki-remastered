@@ -11,7 +11,6 @@ function Search({ data, setData, initialData }) {
 
   function inputFunction(e) {
     setSearchData(e.target.value);
-    console.log(searchData);
   }
 
   function searchFunction(e) {
@@ -27,7 +26,7 @@ function Search({ data, setData, initialData }) {
   }
 
   return (
-    <div className={styles.searchContainer}>
+    <form className={styles.searchContainer} onSubmit={searchFunction}>
       <div className={styles.iconMapMarker}>
         <FontAwesomeIcon icon={faMapMarkerAlt} />
       </div>
@@ -37,14 +36,10 @@ function Search({ data, setData, initialData }) {
         type="search"
         placeholder="Rechercher..."
       />
-      <button
-        type="submit"
-        onClick={searchFunction}
-        className={styles.iconGlass}
-      >
+      <button type="submit" className={styles.iconGlass}>
         <FontAwesomeIcon icon={faMagnifyingGlass} />
       </button>
-    </div>
+    </form>
   );
 }
 
