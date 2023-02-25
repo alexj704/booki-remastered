@@ -1,0 +1,35 @@
+.searchContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.iconMapMarker {
+  display: flex;
+  font-size: 120%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--background-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.city {
+  height: 50px;
+  border: solid 1px var(--background-color);
+  font-weight: 800;
+  padding-left: 15px;
+}
+
+.iconGlass {
+  display: flex;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+  border: none;
+}

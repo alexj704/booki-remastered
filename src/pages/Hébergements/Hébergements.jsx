@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Cards from "../../components/Cards/Cards";
+import Search from "../../components/Search/Search";
 
 function Hébergements() {
   const [data, setData] = useState([]);
@@ -74,22 +75,7 @@ function Hébergements() {
 
   return (
     <main className={styles.hebergementsContainer}>
-      <div className={styles.searchContainer}>
-        <div className={styles.iconMapMarker}>
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
-        </div>
-        <form method="post" action="traitement.php">
-          <input
-            className={styles.city}
-            type="search"
-            placeholder="Marseille, France"
-          />
-        </form>
-        <button className={styles.searchButton}>Rechercher</button>
-        <div className={styles.iconGlass}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </div>
-      </div>
+      <Search data={data} setData={setData} initialData={initialData} />
       <div className={styles.filterContainer}>
         <h2 className={styles.filterTitle}>Filtres</h2>
         <button id="ecoFilter" className={styles.filters} onClick={ecoFilter}>
@@ -123,6 +109,10 @@ function Hébergements() {
         <ul className={styles.allAccomodationsList}>
           {error ? (
             <span className={styles.errorText}>Oups il y a une erreur</span>
+          ) : data.length == 0 ? (
+            <span className={styles.noResultsText}>
+              Oups, il n'y a pas de résultats
+            </span>
           ) : (
             data.map((profile, index) => (
               <Cards
