@@ -20,7 +20,7 @@
 }
 
 .headerLinks {
-  font-size: 18px;
+  font-size: 1.3rem;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 700;
@@ -44,7 +44,7 @@
   }
 
   .headerLinks {
-    font-size: 18px;
+    font-size: 1.6rem;
     margin: 0 15px;
     border: none;
     padding: 0;

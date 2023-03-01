@@ -1,0 +1,19 @@
+.tagItem {
+  color: white;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  height: 30px;
+  margin-right: 10px;
+  display: inline;
+  vertical-align: initial;
+  line-height: 30px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .tagItem {
+    font-size: 1.3rem;
+  }
+}

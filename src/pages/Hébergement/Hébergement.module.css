@@ -1,7 +1,16 @@
+.titleContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .accomodationTitle {
   color: var(--primary-color);
+  font-size: 1.8rem;
+  border-radius: 25px;
+  background-color: var(--background-color);
+  width: fit-content;
+  padding: 5px 10px;
   text-align: center;
-  font-size: 24px;
 }
 
 .accomodationContainer {
@@ -10,9 +19,81 @@
 }
 
 .imageContainer {
-  width: 90%;
-  margin: 0 auto;
   height: 200px;
   border-radius: 25px;
   object-fit: cover;
+}
+
+.infosContainer {
+  font-size: 1.1rem;
+}
+
+.tagsAndPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagsList {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.price {
+  margin-bottom: 15px;
+}
+
+.ratingContainer {
+  margin-bottom: 15px;
+}
+
+.animals {
+  margin-bottom: 15px;
+}
+
+.icon {
+  color: var(--primary-color);
+}
+
+.maxPerson {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .accomodationTitle {
+    font-size: 2rem;
+    padding: 5px 15px;
+  }
+
+  .imageContainer {
+    height: 350px;
+    width: 100%;
+  }
+
+  .infosContainer {
+    font-size: 1.3rem;
+  }
+
+  .tagsAndPrice {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: end;
+  }
+
+  .tagsList {
+    margin: 15px 0;
+  }
+
+  .price {
+    margin: 15px 0;
+  }
+
+  .ratingAndAnimals {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .animalsAndMax {
+    text-align: end;
+  }
 }
