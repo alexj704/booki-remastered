@@ -121,6 +121,7 @@ function Hébergements() {
                 cover={profile.cover}
                 price={profile.price}
                 rating={profile.rating}
+                id={profile.id}
               />
             ))
           )}

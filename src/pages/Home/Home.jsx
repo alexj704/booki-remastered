@@ -56,6 +56,7 @@ function Home() {
                       cover={profile.cover}
                       price={profile.price}
                       rating={profile.rating}
+                      id={profile.id}
                     />
                   )
               )
@@ -82,6 +83,7 @@ function Home() {
                     cover={profile.cover}
                     price={profile.price}
                     rating={profile.rating}
+                    id={profile.id}
                   />
                 )
             )}

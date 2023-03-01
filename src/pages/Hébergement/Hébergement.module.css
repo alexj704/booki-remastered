@@ -1,0 +1,18 @@
+.accomodationTitle {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 24px;
+}
+
+.accomodationContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 25px;
+  object-fit: cover;
+}
