@@ -1,0 +1,42 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error404 {
+  font-size: calc(1rem + 20vw);
+  font-weight: 900;
+  color: var(--primary-color);
+  -webkit-text-stroke: 3px black;
+  margin-bottom: 20px;
+  line-height: calc(1rem + 20vw);
+}
+
+.errorText {
+  margin-bottom: 20px;
+}
+
+.errorLink {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .errorContainer {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .error404 {
+    margin-bottom: 40px;
+  }
+  .errorText {
+    margin-bottom: 40px;
+  }
+  .errorLink {
+    margin-bottom: 20px;
+  }
+}
